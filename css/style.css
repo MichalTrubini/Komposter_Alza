@@ -321,6 +321,9 @@
 #celek .pl-m-40 {
   margin: 40px;
 }
+#celek .compostingSmall {
+  display: none;
+}
 #celek .pl-ml-20 {
   margin-left: 20px;
 }
@@ -466,7 +469,7 @@
     width: 70%;
   }
   .mobile #celek .pl-ml-80 {
-    margin-left: 20px;
+    margin-left: 40px;
   }
   .mobile #celek .pl-green-italic-32 {
     font-size: 18px;
@@ -587,12 +590,103 @@
     margin-top: 15px;
   }
   .mobile #celek .pl-left-green-border {
-    border-left: 8px solid #9FC694;
+    border-left: 8px solid #9fc694;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 40px;
   }
   .mobile #celek .pl-pw-40 {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .mobile #celek .fxDirColRev {
+    flex-direction: column-reverse;
+  }
+  .mobile #celek .fxDirColRev > div {
+    width: 100%;
+  }
+  .mobile #celek .imageWidthFix {
+    width: 80%;
+  }
+  .mobile #celek .pl-block-option {
+    flex-direction: column;
+  }
+  .mobile #celek .pl-block-option > div {
+    width: 100%;
+  }
+  .mobile #celek .pl-right-option {
+    padding: 16px 16px;
+  }
+  .mobile #celek .imageWidthSixty {
+    width: 60% !important;
+    display: flex;
+    margin: auto;
+  }
+  .mobile #celek .pl-left-option {
+    padding: 0;
+  }
+  .mobile #celek .lastSection {
+    flex-direction: column;
+  }
+  .mobile #celek .lastSection > div {
+    width: auto;
+  }
+  .mobile #celek .pl-block-last-left {
+    margin: 0;
+    padding: 20px 10px;
+  }
+  .mobile #celek .pl-block-last-left p {
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-top: 40px;
+  }
+  .mobile #celek .compostingLarge {
+    display: none;
+  }
+  .mobile #celek .compostingSmall {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile #celek .compostingBorder {
+    display: block;
+    width: 70%;
+    height: 1px;
+    border-bottom: 1px dashed #9fc694;
+    margin-top: 40px;
+  }
+  .mobile #celek .compostText {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 33px;
+    font-style: italic;
+    color: #9fc694;
+  }
+  .mobile #celek .compostCircle {
+    width: 51px;
+    height: 51px;
+    background-color: #9fc694;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile #celek .circleNumber {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 41px;
+  }
+  .mobile #celek .compostImageContainer {
+    position: relative;
+  }
+  .mobile #celek .compostImageContainer > img {
+    width: 80%;
+  }
+  .mobile #celek .compostContent {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }/*# sourceMappingURL=style.css.map */
