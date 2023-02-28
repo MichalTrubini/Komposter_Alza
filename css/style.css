@@ -66,10 +66,6 @@
   width: 33.33%;
   float: left;
 }
-#celek .pl-block-1-4 {
-  width: 25%;
-  float: left;
-}
 #celek .pl-block-2-4 {
   width: 50%;
   float: left;
@@ -98,6 +94,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+#celek .highlightsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 #celek .pl-block-four-icon {
   margin: 40px 60px;
@@ -414,9 +414,10 @@
     font-size: 32px;
     line-height: 42px;
     font-weight: bold;
-    color: #9FC694;
+    color: #9fc694;
   }
-  .layout-0 #celek .pl-positive, .layout-0 #celek .layout-0 #celek .pl-negative {
+  .layout-0 #celek .pl-positive,
+  .layout-0 #celek .layout-0 #celek .pl-negative {
     float: left;
     width: 50%;
     padding: 50px 40px 50px 40px;
@@ -428,11 +429,170 @@
   .layout-0 #celek .table {
     padding: 0 20px;
   }
-  .layout-0 #celek .pl-positive, .layout-0 #celek .layout-0 #celek .pl-negative {
+  .layout-0 #celek .pl-positive,
+  .layout-0 #celek .layout-0 #celek .pl-negative {
     padding: 50px 40px 50px 40px;
   }
   .layout-0 #celek .pl-block-last-left {
     width: 57%;
     margin: 20px 20px 20px 40px;
+  }
+  .layout-0 #celek .pl-block-1-4 {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .mobile #celek .pl-green-block {
+    width: 94%;
+    padding: 20px;
+  }
+  .mobile #celek h2 {
+    font-size: 26px;
+  }
+  .mobile #celek sup.pl-supx {
+    font-size: 16px;
+  }
+  .mobile #celek .pl-green-block p {
+    font-size: 20px;
+  }
+  .mobile #celek .fxDirCol {
+    flex-direction: column;
+  }
+  .mobile #celek .fxDirCol > div {
+    width: 100%;
+  }
+  .mobile #celek .pl-img-hl1 {
+    width: 70%;
+  }
+  .mobile #celek .pl-ml-80 {
+    margin-left: 20px;
+  }
+  .mobile #celek .pl-green-italic-32 {
+    font-size: 18px;
+    margin: 40px;
+  }
+  .mobile #celek .imgCenter {
+    display: block;
+    margin: auto;
+  }
+  .mobile #celek .pl-positive-negative {
+    flex-direction: column;
+    width: 100%;
+  }
+  .mobile #celek .pl-positive,
+  .mobile #celek .pl-negative {
+    width: 100%;
+    padding: 37px 40px 50px 16px;
+    position: relative;
+    margin: 0;
+  }
+  .mobile #celek .pl-negative {
+    margin-top: 15px;
+  }
+  .mobile #celek .table {
+    padding: 0;
+  }
+  .mobile #celek .pl-positive::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: none;
+    border-right: 70px solid transparent;
+    border-left: 70px solid transparent;
+    border-top: 70px solid #9fc694;
+    position: absolute;
+    bottom: -70px;
+    left: calc(50% - 7px);
+    z-index: 5;
+    top: unset;
+    right: unset;
+  }
+  .mobile #celek .pl-negative::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: none;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid #585858;
+    position: absolute;
+    left: calc(50% - 132px);
+    top: -70px;
+    z-index: 5;
+  }
+  .mobile #celek .pl-positive ul {
+    margin-top: 32px;
+    margin-left: 25px;
+  }
+  .mobile #celek .pl-negative ul {
+    margin-top: 40px;
+    margin-left: 25px;
+  }
+  .mobile #celek h4 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 38px;
+  }
+  .mobile #celek .pl-text-26 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .mobile #celek .pl-block-four-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 10px;
+    padding: 50px 0;
+    border-top: 3px solid #efefef;
+    border-bottom: 3px solid #efefef;
+  }
+  .mobile #celek .highlightsRow {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile #celek .pl-border-left,
+  .mobile #celek .pl-border-right {
+    border: none;
+  }
+  .mobile #celek .pl-block-1-4 {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .mobile #celek .pl-block-four-icon p {
+    margin: 20px 20px 20px 20px;
+    font-size: 16px;
+  }
+  .mobile #celek .borderFixRight {
+    border-right: 1px solid black;
+  }
+  .mobile #celek .borderFixBottom {
+    border-bottom: 1px solid black;
+  }
+  .mobile #celek .noteFix {
+    margin: 0;
+    font-size: 13px;
+    color: #9fc694;
+    font-style: italic;
+    line-height: 18px;
+  }
+  .mobile #celek h3 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: bold;
+    color: #9fc694;
+  }
+  .mobile #celek .textDescription {
+    font-size: 15px;
+    line-height: 32px;
+    margin-top: 15px;
+  }
+  .mobile #celek .pl-left-green-border {
+    border-left: 8px solid #9FC694;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mobile #celek .pl-pw-40 {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
